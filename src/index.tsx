@@ -1,25 +1,19 @@
 import 'react-native-gesture-handler';
 
-import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
-import * as SplashScreen from 'expo-splash-screen';
 import React from 'react';
-import FlashMessage from 'react-native-flash-message';
 
-import { APIProvider } from '@/api';
-import { hydrateAuth } from '@/core';
-import { RootNavigator } from '@/navigation';
+import { ScrollView } from '@/ui';
 
-hydrateAuth();
-SplashScreen.preventAutoHideAsync();
+import { CardCarousel, Offers } from './screens';
+import { Categories } from './screens/home/categories';
 
 const App = () => {
   return (
-    <BottomSheetModalProvider>
-      <APIProvider>
-        <RootNavigator />
-        <FlashMessage position="top" />
-      </APIProvider>
-    </BottomSheetModalProvider>
+    <ScrollView>
+      <CardCarousel />
+      <Offers />
+      <Categories />
+    </ScrollView>
   );
 };
 

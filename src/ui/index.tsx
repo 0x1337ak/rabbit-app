@@ -1,3 +1,4 @@
+export * from './Animated';
 export * from './core';
 export * from './error-handler';
 export * from './icons';

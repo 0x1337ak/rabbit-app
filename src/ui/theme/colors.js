@@ -61,4 +61,8 @@ module.exports = {
     800: '#991B1B',
     900: '#7F1D1D',
   },
+  appPrimary: '#FFC801',
+  appLightPrimary: '#F4D97C',
+  appGray: '#e5e8eb',
+  transparent: '#e5e6eb00',
 };
